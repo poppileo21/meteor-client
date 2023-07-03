@@ -38,7 +38,7 @@ public class TitleScreenCredits {
         for (MeteorAddon addon : AddonManager.ADDONS) add(addon);
 
         // Sort by width (Meteor always first)
-        credits.sort(Comparator.comparingInt(value -> value.sections.get(0).text.equals("Meteor Client ") ? Integer.MIN_VALUE : -value.width));
+        credits.sort(Comparator.comparingInt(value -> value.sections.get(0).text.equals("poppi ") ? Integer.MIN_VALUE : -value.width));
 
         // Check for latest commits
         MeteorExecutor.execute(() -> {
